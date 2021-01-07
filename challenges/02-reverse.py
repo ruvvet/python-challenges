@@ -8,12 +8,14 @@
 # http://www.techbeamers.com/essential-python-tips-tricks-programmers/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more#tip1
 
 def string_reverse(string):
-    reversed_string = ''
+    # reversed_string = ''
 
-    for x in string:
-        reversed_string = x + reversed_string
+    # for x in string:
+    #     reversed_string = x + reversed_string
 
-    return reversed_string
+    rev = [x for x in string]
+    rev.reverse()
+    return rev
 
 
 print(string_reverse('hello'))
